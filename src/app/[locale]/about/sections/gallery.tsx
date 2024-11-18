@@ -147,18 +147,9 @@ const ImageTickerTape = () => {
                                 )}
                                 key={index}
                                 ref={index === 0 ? spanRef : null}>
-                                <div className="flex-1 min-w-[700px] max-lg:min-w-[580px]  max-md:min-w-[480px] max-sm:min-w-[320px] max-w-[764px]">
+                                <div className="flex-1 min-w-[700px] max-lg:min-w-[580px]  max-md:min-w-[480px1] max-sm:min-w-[320px] max-w-[764px]">
                                     <Image
-                                        src="/assets/images/gallery-2.jpg"
-                                        alt="Picture of the author"
-                                        className="rounded-[10px] w-full h-full object-cover"
-                                        width={300}
-                                        height={550}
-                                    />
-                                </div>
-                                <div className="flex-1  min-w-[700px] max-lg:min-w-[580px]  max-md:min-w-[480px] max-sm:min-w-[320px] max-w-[764px]">
-                                    <Image
-                                        src="/assets/images/gallery-2.jpg"
+                                        src="/assets/images/gallery-1.png"
                                         alt="Picture of the author"
                                         className="rounded-[10px] w-full h-full object-cover"
                                         width={764}
@@ -167,10 +158,19 @@ const ImageTickerTape = () => {
                                 </div>
                                 <div className="flex-1  min-w-[700px] max-lg:min-w-[580px]  max-md:min-w-[480px] max-sm:min-w-[320px] max-w-[764px]">
                                     <Image
-                                        src="/assets/images/gallery-2.jpg"
+                                        src="/assets/images/gallery-1.png"
                                         alt="Picture of the author"
                                         className="rounded-[10px] w-full h-full object-cover"
-                                        width={300}
+                                        width={764}
+                                        height={550}
+                                    />
+                                </div>
+                                <div className="flex-1  min-w-[700px] max-lg:min-w-[580px]  max-md:min-w-[480px] max-sm:min-w-[320px] max-w-[764px]">
+                                    <Image
+                                        src="/assets/images/gallery-1.png"
+                                        alt="Picture of the author"
+                                        className="rounded-[10px] w-full h-full object-cover"
+                                        width={764}
                                         height={550}
                                     />
                                 </div>
