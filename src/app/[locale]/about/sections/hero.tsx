@@ -54,7 +54,7 @@ export const AboutHero = () => {
                     </clipPath>
                 </defs>
             </svg>
-            <div className="absolute right-0 -bottom-10 z-50 max-md:left-6 max-lg:max-w-xl">
+            <div className="absolute right-0 -bottom-10 z-50 max-md:left-6 max-lg:max-w-xl  max-sm:bottom-0">
                 <Image
                     className="pointer-events-none rounded-[21px] size-full object-cover object-center "
                     src="/assets/images/about-hero.png"
