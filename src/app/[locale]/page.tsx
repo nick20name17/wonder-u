@@ -910,9 +910,6 @@ export default function Home() {
                                 // navigation
                                 // scrollbar={{ draggable: true }}
                                 effect="cards"
-                                onSlideChange={() =>
-                                    console.log("slide change")
-                                }
                                 onBeforeInit={(swiper) => {
                                     swiperRef.current = swiper;
                                 }}

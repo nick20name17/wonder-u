@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const AboutHero = () => {
     return (
-        <section className=" h-[577px] px-2 relative overflow-hidden max-lg:h-[720px] rounded-[21px]">
+        <section className=" h-[577px] px-2 relative overflow-hidden max-[1080px]:h-[720px] rounded-[21px]">
             <svg
                 className="pointer-events-none min-h-full min-w-full"
                 viewBox="0 0 1389 577"
@@ -54,9 +54,9 @@ export const AboutHero = () => {
                     </clipPath>
                 </defs>
             </svg>
-            <div className="absolute right-0 -bottom-10 z-50 max-md:left-6 max-lg:max-w-xl  max-sm:bottom-0">
+            <div className="absolute right-0 -bottom-10 z-50 max-md:left-6 max-[1200px]:max-w-lg max-sm:bottom-0">
                 <Image
-                    className="pointer-events-none rounded-[21px] size-full object-cover object-center "
+                    className="pointer-events-none rounded-[21px] size-full object-cover object-center  "
                     src="/assets/images/about-hero.png"
                     width={670}
                     height={604}
@@ -65,7 +65,7 @@ export const AboutHero = () => {
                 />
             </div>
 
-            <div className="absolute left-0 px-20 max-lg:px-8 pt-8 top-1/2 -translate-y-1/2 z-50 max-w-[612px] flex flex-col items-start justify-center h-full max-lg:justify-start">
+            <div className="absolute left-0 px-20  max-[1080px]:px-8 pt-8 top-1/2 -translate-y-1/2 z-50 max-w-[612px] flex flex-col items-start justify-center h-full  max-[1080px]:justify-start">
                 <Title>Краща версія тебе починається зараз з WonderU</Title>
                 <p className="mt-2 text-lg font-medium text-[#575554] max-md:text-base">
                     Програма побудована таким чином, що поступово і м’яко

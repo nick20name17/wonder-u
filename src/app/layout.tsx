@@ -1,6 +1,7 @@
 // import type { Metadata } from "next";
 import "@/app/globals.sass";
 import i18nConfig from "@/i18nConfig";
+import { ReactQueryProvider } from "@/providers/react-query-provider";
 import { Metadata } from "next";
 import { Golos_Text } from "next/font/google";
 import React from "react";
@@ -41,7 +42,7 @@ export default function RootLayout({
         <html lang={locale}>
             <body
                 className={`${fontPrimary.variable} ${fontSecondary.variable}`}>
-                {children}
+                <ReactQueryProvider>{children}</ReactQueryProvider>
             </body>
         </html>
     );
