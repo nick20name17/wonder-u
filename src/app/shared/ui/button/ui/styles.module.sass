@@ -1,0 +1,19 @@
+@import @shared/styles/mixins
+
+.button
+    padding: 12px 32px
+    border-radius: 8px
+    height: 48px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    @include text-body
+    &_solid
+        &__default
+            background-color: var(--color-dark-night-black)
+            color: var(--color-lavander-soft-lavander)
+    &_outline
+        &__default
+            border: 1px solid var(--color-dark-night-black-support)
+    &__sm
+        padding: 4px 8px

@@ -1,0 +1,35 @@
+@import @shared/styles/mixins
+
+.badge
+    border-radius: 8px
+    height: 36px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    @include text-body
+    &_solid
+        &__default
+            background-color: var(--color-dark-night-black)
+        &__acid_green
+            background-color: var(--color-accent-acid-green)
+    &_outline
+        &__default
+            border: 1px solid var(--color-dark-night-black)
+        &__acid_green
+            border: 1px solid var(--color-accent-acid-green)
+    &__lg
+        height: 52px
+    &_rounded
+        &__none
+            border-radius: 0
+        &__default
+            border-radius: 12px
+        &__full
+            border-radius: 9999px
+    
+    &_padding
+        &__none
+        &__default
+            padding: 8px 12px
+        &__lg
+            padding: 12px 16px

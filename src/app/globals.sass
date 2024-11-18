@@ -1,0 +1,55 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+:root
+  --color-base-white: #FFFFFF
+  --color-base-beige-skin: #F1EBDF
+  --color-base-beige-skin-nude: #F9F8F3
+  --color-base-beige-medium: #ECE3D6
+  --color-base-beige-selection: #D6CEB7
+  --color-accent-acid-green: #F6FF7F
+  --color-accent-marsh-green: #86A03D
+  --color-dark-cofianan-gray: #575554
+  --color-dark-night-black: #353342
+  --color-dark-night-black-support: #9694A9
+  // Lavander
+  --color-lavander-soft-lavander: #E4E5FF
+  --color-lavander-gentle-lavander: #F4F5FF
+  --color-lavander-tender-lavander: #C8CAFF
+  --color-lavander-medium-lavander: #A79AF8
+  --color-lavander-dark-lavander: #8A78FC
+  --color-lavander-half-tone: #C8CAFF
+
+  --gradient-lavander-secondary: linear-gradient(180deg, #FFFFFF 0%, #F4F4FF 100%)
+
+  --font-primary: "Golos Text", sans-serif
+  --font-secondary: "Golos Text", sans-serif
+
+@media (prefers-color-scheme: dark)
+  :root
+    --background: #0a0a0a
+    --foreground: #ededed
+
+body
+  font-family: var(--font-primary)
+  color: var(--color-dark-night-black)
+  box-sizing: border-box
+
+html, body
+  display: flex
+  flex-direction: column
+  width: 100%
+  min-height: 100vh
+
+.content
+  flex: 1
+  padding: 0 8px
+  margin-top: 64px
+
+.swiper-3d .swiper-slide-shadow
+  background: rgba(0, 0, 0, 0.0)!important
+
+@layer utilities
+  .text-balance
+    text-wrap: balance

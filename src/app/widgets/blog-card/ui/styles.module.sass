@@ -1,0 +1,47 @@
+@import '@shared/styles/breakpoints'
+@import '@shared/styles/mixins'
+
+.card
+    border-radius: 20px
+    background: var(--color-base-beige-skin-nude)
+    border: 1px solid var(--color-base-beige-skin-nude)
+    overflow: hidden
+.image
+    &_overlay
+        background: linear-gradient(180deg, rgba(249, 248, 243, 0) 55.14%, #F9F8F3 100%)
+.title
+    font-family: var(--font-primary)
+    font-weight: 450
+    font-size: 18px
+    line-height: 150%
+    letter-spacing: -0.0025em
+    // color: var(--color-dark-night-black)
+    color: var(--color-dark-cofianan-gray)
+    @media ( max-width:  $breakpoint-lg )
+        font-size: 22px
+        line-height: 140%
+        letter-spacing: -0.0125em
+.description
+    font-family: var(--font-primary)
+    font-weight: 400
+    font-size: 14px
+    line-height: 140%
+    color: var(--color-dark-cofianan-gray)
+.date
+    font-family: var(--font-primary)
+    font-weight: 400
+    font-size: 14px
+    line-height: 140%
+    color: #D6CEB7
+.link
+    font-family: var(--font-primary)
+    font-weight: 450
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: -0.0025em
+    // color: var(--color-dark-night-black)
+    color: var(--color-dark-cofianan-gray)
+    background: rgba(228, 229, 255, 0.2)
+    border: 1.5px solid var(--color-lavander-tender-lavander)
+    border-radius: 5px
+    padding: 0 16px

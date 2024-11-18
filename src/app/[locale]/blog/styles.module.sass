@@ -1,0 +1,57 @@
+@import @shared/styles/mixins
+@import '@shared/styles/breakpoints'
+
+.banner
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4F4FF 100%)
+    border: 1px solid #F1EBDF
+    border-radius: 21px
+    font-family: var(--font-primary)
+    font-weight: 400
+    font-size: 28px
+    line-height: 130%
+    text-align: center
+    letter-spacing: -0.0125em
+    color: var(--color-dark-night-black)
+    @media (min-width: $breakpoint-lg)
+        font-size: 48px
+
+.pricing
+    border: 1px solid #F1EBDF
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4F4FF 100%)
+    &_title
+        font-family: var(--font-primary)
+        font-weight: 500
+        font-size: 22px
+        line-height: 125%
+        letter-spacing: -0.01em
+        color: #443E3B
+        text-align: center
+        @media (min-width: $breakpoint-lg)
+            font-size: 42px
+    &_description
+        font-family: var(--font-primary)
+        font-weight: 400
+        font-size: 16px
+        line-height: 130%
+        text-align: center
+        letter-spacing: -0.0125em
+        color: var(--color-dark-cofianan-gray)
+        @media (min-width: $breakpoint-lg)
+            font-size: 28px
+        span
+            color: var(--color-lavander-dark-lavander)
+    &_button
+        font-family: var(--font-primary)
+        font-weight: 500
+        font-size: 16px
+        line-height: 150%
+        letter-spacing: -0.0025em
+        color: var(--color-dark-night-black)
+        background: rgba(228, 229, 255, 0.2)
+        border: 1.5px solid var(--color-lavander-tender-lavander)
+        border-radius: 5px
+        padding: 0 32px
+        height: 48px
+        display: inline-flex
+        align-items: center
+        justify-content: center

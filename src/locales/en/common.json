@@ -1,0 +1,46 @@
+{
+    "buttonHome": "Home",
+    "buttonBack": "Back",
+    "menu": {
+      "title": "Menu",
+      "items": [
+        { 
+          "id": "dashboard",
+          "name": "Overview"
+        },
+        {
+          "id": "personalPlan",
+          "name": "Personal Plan"
+        },
+        { 
+          "id": "workouts",
+          "name": "Workouts"
+        },
+        { 
+          "id": "nutrition",
+          "name": "Nutrition"
+        },
+        {
+          "id": "favorite",
+          "name": "Favorite"
+        },
+        {
+          "id": "progress",
+          "name": "My Progress"
+        },
+        {
+          "id": "subscription",
+          "name": "My Subscriptions"
+        },
+        { 
+          "id": "support",
+          "name": "Help & Support"
+        }
+      ]
+    },
+    "rating": {
+      "good": "Good",
+      "normal": "Normal",
+      "bad": "Bad"
+    }
+}

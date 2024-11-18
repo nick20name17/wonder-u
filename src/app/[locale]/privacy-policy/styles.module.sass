@@ -1,0 +1,37 @@
+@import @shared/styles/mixins
+@import '@shared/styles/breakpoints'
+
+.title
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 500
+    font-size: 28px
+    line-height: 130%
+    letter-spacing: -0.0125em
+    color: var(--color-dark-cofianan-gray)
+.subtitle
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 140%
+    letter-spacing: -0.0125em
+    color: var(--color-dark-cofianan-gray)
+
+.paragraph
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: -0.0025em
+    color: var(--color-dark-cofianan-gray)
+
+.paragraph + .paragraph
+    margin-top: 8px
+
+.subtitle + .paragraph
+    margin-top: 12px
+
+.paragraph + .subtitle
+    margin-top: 32px

@@ -1,0 +1,13 @@
+@import '@shared/styles/mixins'
+@import '@shared/styles/breakpoints'
+
+.title
+    @include text-title
+    &_default
+        font-size: 28px
+        @media (min-width: $breakpoint-lg)
+            font-size: 42px
+    &_lg
+        max-width: 800px
+    &_xs
+        max-width: 600px

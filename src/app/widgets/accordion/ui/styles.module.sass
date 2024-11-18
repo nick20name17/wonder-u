@@ -1,0 +1,69 @@
+@import '@shared/styles/mixins'
+
+.accordion
+    display: flex
+    flex-direction: column
+    gap: 8px
+.item
+    padding: 24px
+    background: var(--color-white)
+    border-radius: 10px
+    border: 0.5px solid var(--color-base-beige-selection)
+    cursor: pointer
+.arrow
+    height: 48px
+    width: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 9999px
+    border: 1px solid var(--color-lavander-half-tone)
+    flex-shrink: 0
+.header
+    display: flex
+    align-items: center
+    gap: 32px
+.title
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 140%
+    letter-spacing: -0.0125em
+    color: var(--color-dark-night-black)
+    display: flex
+    align-items: center
+    gap: 8px
+    cursor: pointer
+    font-size: 24px
+    flex: 1
+.content
+    overflow: hidden
+.subtitle_paragraph
+    // @include text-subtitle-3
+    color: var(--color-dark-cofianan-gray)
+.paragraph
+    @include text-body
+    color: var(--color-dark-cofianan-gray)
+.list
+    display: flex
+    flex-direction: column
+    gap: 8px
+    &_item
+        position: relative
+        margin-left: 18px
+        @include text-body
+        color: var(--color-dark-cofianan-gray)
+        &::before
+            content: ''
+            display: block
+            background: var(--color-lavander-half-tone)
+            width: 6px
+            height: 6px
+            border-radius: 9999px
+            position: absolute
+            top: calc((16px*1.5 - 6px)/2)
+            left: -14px
+
+* + .list, * + .paragraph
+    margin-top: 8px

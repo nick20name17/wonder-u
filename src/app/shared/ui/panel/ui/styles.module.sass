@@ -1,0 +1,31 @@
+@import '@shared/styles/breakpoints'
+
+.panel
+    margin: 0 auto
+    // width: 100%
+    overflow: hidden
+    &_bg
+        &__acid_green
+            background-color: var(--color-accent-acid-green)
+        &__gentle_lavander
+            background-color: var(--color-lavander-gentle-lavander)
+        &__soft_lavander
+            background-color: var(--color-lavander-soft-lavander)
+        &__medium_lavander
+            background-color: var(--color-lavander-medium-lavander)
+        &__beige_skin_nude
+            background-color: var(--color-base-beige-skin-nude)
+        &__dark_lavander
+            background-color: var(--color-lavander-dark-lavander)
+    &_outline
+        &__beige_selection
+            border: 1px solid var(--color-base-beige-skin)
+    &_rounded
+        &__none
+            border-radius: 0
+        &__default
+            border-radius: 12px
+        &__lg
+            border-radius: 12px
+            @media (min-width: $breakpoint-lg)
+                border-radius: 26px

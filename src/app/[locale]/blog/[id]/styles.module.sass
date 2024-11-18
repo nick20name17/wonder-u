@@ -1,0 +1,77 @@
+@import @shared/styles/mixins
+@import '@shared/styles/breakpoints'
+
+.button_back
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: -0.0025em
+    color: var(--color-dark-night-black-support)
+
+.date
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 140%
+    color: #9A9185
+
+.image
+    &_gradient
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 68.29%, #FFFFFF 100%)
+
+.title
+    font-family: var(--font-secondary)
+    font-weight: 500
+    font-size: 24px
+    line-height: 1.1em
+    letter-spacing: -0.0125em
+    color: var(--color-dark-night-black)
+
+.paragraph, .list, .list_item
+    font-family: var(--font-primary)
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: -0.0025em
+    color: var(--color-dark-cofianan-gray)
+    strong
+        font-weight: 600
+
+.list
+    &_item
+        position: relative
+        margin-left: 18px
+        &::before
+            content: ''
+            display: block
+            background: var(--color-lavander-half-tone)
+            width: 6px
+            height: 6px
+            border-radius: 9999px
+            position: absolute
+            top: calc((16px*1.5 - 6px)/2)
+            left: -14px
+
+* + .paragraph, * + .list
+    margin-top: 24px
+    @media (min-width: $breakpoint-lg)
+        margin-top: 32px
+
+.related
+    &_title
+        font-family: var(--font-primary)
+        font-style: normal
+        font-weight: 500
+        font-size: 28px
+        line-height: 130%
+        letter-spacing: -0.0125em
+        color: var(--color-dark-cofianan-gray)
