@@ -156,7 +156,7 @@ export default function Home() {
                             <p className="mt-4">{t("home:hero.description")}</p>
                             <div className="mt-8 sm:mt-14">
                                 <Button
-                                    href="/signup"
+                                    href="/pre-subscription"
                                     className="w-full sm:w-[400px]">
                                     {t("home:hero.button")}
                                 </Button>
@@ -436,7 +436,9 @@ export default function Home() {
                                     <strong>ви досягнете своєї мети</strong>.
                                 </p>
                                 <div className="hidden lg:block lg:mt-[56px]">
-                                    <Button href="/signup" className="">
+                                    <Button
+                                        href="/pre-subscription"
+                                        className="">
                                         Спробувати безкоштовно
                                     </Button>
                                 </div>
@@ -451,7 +453,7 @@ export default function Home() {
                                 />
                                 <div className="lg:hidden mt-10">
                                     <Button
-                                        href="/signup"
+                                        href="/pre-subscription"
                                         className="min-w-[275px] sm:w-[400px]">
                                         {t("home:hero.button")}
                                     </Button>

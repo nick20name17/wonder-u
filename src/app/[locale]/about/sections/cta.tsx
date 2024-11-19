@@ -82,7 +82,9 @@ export const AboutCTA = () => {
                         Зараз
                     </div>
                 </h1>
-                <Button href="/signup" className="w-72 sm:w-[400px] mt-8">
+                <Button
+                    href="/pre-subscription"
+                    className="w-72 sm:w-[400px] mt-8">
                     Приєднатися безкоштовно
                 </Button>
             </div>

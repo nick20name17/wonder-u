@@ -48,7 +48,7 @@ const SignUpPage = () => {
                     <Image
                         className="absolute right-0 top-0 bottom-0 h-full object-cover object-left-top w-[730px]"
                         src={"/assets/images/signup-bg.png"}
-                        alt="signup"
+                        alt="pre-subscription"
                         width={1080}
                         height={720}
                     />

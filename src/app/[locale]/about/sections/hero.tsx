@@ -73,7 +73,9 @@ export const AboutHero = () => {
                     фундаментальні зміни дадуть результат, який не “відкатиться”
                     назад через кілька тижнів, а стане вашою новою нормою.
                 </p>
-                <Button href="/signup" className="w-72 sm:w-[400px] mt-8">
+                <Button
+                    href="/pre-subscription"
+                    className="w-72 sm:w-[400px] mt-8">
                     Приєднатись безкоштовно
                 </Button>
             </div>

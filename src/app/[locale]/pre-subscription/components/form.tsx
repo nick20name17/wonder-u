@@ -32,29 +32,30 @@ export const SignUpForm = ({ setSuccess }: SignUpFormProps) => {
     const form = useForm({
         resolver: zodResolver(signupSchema),
         defaultValues: {
-            name: "",
-            email: "",
+            name: "3232",
+            email: "nick2000@gmail.com",
         },
     });
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
     const mutation = useMutation({
         mutationFn: async (formData: SignUpFormData) => {
-            const response = await fetch("/api/send", {
-                method: "POST",
-                body: JSON.stringify(formData),
-            });
+            const response = await fetch(
+                "https://wonder-u-rest-api.efil-web.com/api/user/v1/pre-subscription/request",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
 
-            if (response.ok) {
-                return response.json();
+            if (!response.ok) {
+                throw new Error("Something went wrong");
             }
-
-            throw new Error("Something went wrong");
         },
         onSuccess: () => {
-            setEmail("");
-            setName("");
+            form.reset();
             setSuccess(true);
         },
         onError: () => {
@@ -62,12 +63,9 @@ export const SignUpForm = ({ setSuccess }: SignUpFormProps) => {
         },
     });
 
-    const onSubmit = () => {
+    const onSubmit = (formData: SignUpFormData) => {
         setError("");
-        mutation.mutate({
-            name,
-            email,
-        });
+        mutation.mutate(formData);
     };
 
     return (
@@ -81,8 +79,6 @@ export const SignUpForm = ({ setSuccess }: SignUpFormProps) => {
                 </label>
                 <input
                     {...form.register("name")}
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
                     className="px-2 border-b pb-2 border-black bg-transparent outline-none"
                     name="name"
                     id="name"
@@ -101,8 +97,6 @@ export const SignUpForm = ({ setSuccess }: SignUpFormProps) => {
                 </label>
                 <input
                     {...form.register("email")}
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
                     className="px-2 border-b pb-2 border-black bg-transparent outline-none"
                     name="email"
                     id="email"
